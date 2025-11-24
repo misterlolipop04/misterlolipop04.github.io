@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="icon" href="./MainElementsImages/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="./UmaMusumeSite.css">
+</head>
+
+<body>
+    <div class="grid-container">
+<!--ШАПКА-->
+<header class="header">
+    <div class="header-container">
+      <a href="./UmaMusumeSite.html" class="logo-link" title="На главную страницу">
+        <img src="./MainElementsImages/UmaMusumeAstonMachanLogo.png" alt="Logo" loading="eager">
+      </a>
+      
+      <h1>Персонажи игры Uma Musume: Pretty Derby</h1>
+      
+      <div class="nav-wrapper">
+        <button class="nav-toggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <nav class="header-nav">
+          <a href="./UmaMusumeSite.html" class="nav-link">Главная</a>
+          <a href="./UmaMusumeListOfCharacters.html" class="nav-link">Список персонажей</a>
+          <a href="./UmaMusumeGallery.html" class="nav-link">Галерея</a>
+          <a href="./NewsUmaMusume.html" class="nav-link">Новости</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+        <!--КНОПКА ВВЕРХ-->
+        <a href="#Up"><button class="fixed-button">⬆</button></a>
+
+        <!--ОПИСАНИЕ СВЕРХУ-->
+        <main class="main-content">
+            <div class="gallery-page">
+                <h1 id="Up" class="gallery-title animate-on-scroll">Галерея иллюстраций</h1>
+                <p class="gallery-description animate-on-scroll">
+                    Коллекция фанартов и официальных иллюстраций по Uma Musume: Pretty Derby. 
+                    Все изображения взяты из открытых источников. Листайте вниз, чтобы увидеть все изображения.
+                </p>
+
+                <div class="gallery-container" id="galleryContainer">
+                    <!-- АРТЫ -->
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/admirevega1.jpg" 
+                             alt="Admire Vega Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Адмайр Вега #AdmireVega
+                            <span class="gallery-author">by starheart on Pixiv</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/seiunsky1.jpg" 
+                             alt="Seiun Sky Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Сэйун Скай #SeiunSky
+                            <span class="gallery-author">by '沛原 /优哉君' on Pixiv</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/goldship1.jpg" 
+                             alt="Gold Ship Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Голд Шип #GoldShip
+                            <span class="gallery-author">by @Daodtt on X</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/stillinlove1.jpg" 
+                             alt="Still in Love Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Стилл ин Лав #StillInLove
+                            <span class="gallery-author">by @narrenschiff on X</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/agnestachyonmanhatencafe1.jpg" 
+                             alt="Agnes Cafe Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Агнес Такион с Манхеттен Кафе #AgnesTachyon #ManhattanCafe
+                            <span class="gallery-author">by @gachitamago on X</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/loveonlyyou1.jpg" 
+                             alt="Loves Only You Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Лавс Онли Ю #LovesOnlyYou
+                            <span class="gallery-author">by @screamingarang on X</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/reddesire1.jpg" 
+                             alt="Red Desire Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Рэд Дизайр #RedDesire
+                            <span class="gallery-author">by @doktahzaki on X</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/currenbouquetdor1.jpg" 
+                             alt="Curren Bouquetdor Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Каррен Букедор #CurrenBouquetdor
+                            <span class="gallery-author">by @ashinowoto on X</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="GalleryImages/currenbouquetdor2.jpg" 
+                             alt="Curren Bouquetdor Art" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">
+                            Каррен Букедор #CurrenBouquetdor
+                            <span class="gallery-author">by @ashinowoto on X</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+
+    <!-- Модальное окно для просмотра изображений -->
+    <div class="gallery-modal" id="galleryModal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-content">
+            <img src="" alt="" class="modal-image" id="modalImage">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+<!--ПОДВАЛ-->
+<footer id="AboutUs" class="footer">
+    <div class="AboutUs">
+      <h3>О нас</h3>
+      Данный сайт не связан с разработчиками Uma Musume. Все материалы игры Uma Musume: Pretty Derby защищены авторским правом Cygames, Inc.
+    </div>
+    <div class="ContactUs">
+      <h3>Контактные данные</h3>
+      Автор: Зильберман Даниэль Яковлевич<br>
+      Телефон: +79167872309<br>
+      Почта: danielzimouse@gmail.com<br>
+    </div>
+</footer>
+    </div>
+
+
+    <script src="./UmaMusumeSiteScript.js"></script>
+</body>
+</html>
