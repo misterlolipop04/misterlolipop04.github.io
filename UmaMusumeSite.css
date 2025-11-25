@@ -541,12 +541,16 @@ article {
 }
 
 /* ===== КНОПКА "ВВЕРХ" ===== */
-.fixed-button {
-    height: 50px;
-    width: 50px;
+.fixed-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
+  }
+  
+.fixed-button {
+    height: 50px;
+    width: 50px;
     text-align: center;
     font: bold;
     font-family: Impact;
@@ -558,10 +562,9 @@ article {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
+  
 .fixed-button:hover {
     background-color: #7427583a;
     transform: scale(1.1);
