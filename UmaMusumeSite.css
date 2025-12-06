@@ -58,6 +58,11 @@ li {
     margin-bottom: 10px;
 }
 
+ul {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 /* ===== ОСНОВНАЯ СЕТКА ===== */
 .grid-container {
     display: grid;
@@ -304,7 +309,7 @@ video {
 
 article {
     width: 100%;
-    max-width: 800px;
+    max-width: 650px;
     background-color: var(--secondary-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
