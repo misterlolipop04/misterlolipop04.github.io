@@ -1046,6 +1046,11 @@ article {
 
 /* Мобильные устройства (до 768px) */
 @media (max-width: 767px) {
+    ul {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
     .design-container {
         display: flex;
         flex-direction: column;
@@ -1075,6 +1080,11 @@ article {
 
 /* Очень маленькие экраны (до 480px) */
 @media (max-width: 480px) {
+    ul {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
     .header h1 {
         font-size: 0.9rem;
     }
