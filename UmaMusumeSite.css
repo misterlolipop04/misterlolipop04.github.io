@@ -817,6 +817,11 @@ article {
 
 /* Мобильные устройства (до 768px) */
 @media (max-width: 768px) {
+    ul {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
     .header-container {
         padding: 0 10px;
     }
