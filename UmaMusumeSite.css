@@ -63,6 +63,10 @@ ul {
     padding-right: 2rem;
 }
 
+ul ul {
+    padding-left: 2rem;
+}
+
 /* ===== ОСНОВНАЯ СЕТКА ===== */
 .grid-container {
     display: grid;
