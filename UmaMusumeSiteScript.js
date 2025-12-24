@@ -6,16 +6,35 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Кнопки лайков:', document.querySelectorAll('.like-btn').length);
     console.log('Посты с новостями:', document.querySelectorAll('.news-post').length);
     
-    // Инициализация всех функций
+    // Инициализация функций
+    loadIncludes().then(() => {
+        initMobileMenu();
+        setActiveNavLink();
+    });
     initUniversalAnimations();
-    setActiveNavLink();
-    initMobileMenu();
     initializeLikes();
     initNewsPage();
     initGalleryModal();
     
     console.log('=== ИНИЦИАЛИЗАЦИЯ ЗАВЕРШЕНА ===');
 });
+
+// ===== ЗАГРУЗКА КОМПОНЕНТОВ =====
+function loadIncludes() {
+    const blocks = document.querySelectorAll('[data-include]');
+
+    return Promise.all(
+        Array.from(blocks).map(block => {
+            const file = block.getAttribute('data-include');
+
+            return fetch(file)
+                .then(res => res.text())
+                .then(html => {
+                    block.innerHTML = html;
+                });
+        })
+    );
+}
 
 // ===== УНИВЕРСАЛЬНАЯ ФУНКЦИЯ АНИМАЦИЙ =====
 function initUniversalAnimations() {
@@ -31,7 +50,7 @@ function initUniversalAnimations() {
                 const element = entry.target;
                 const index = Array.from(animatedElements).indexOf(element);
                 
-                const delay = index * 100;
+                const delay = index * 10;
                 
                 setTimeout(() => {
                     element.classList.add('visible');
