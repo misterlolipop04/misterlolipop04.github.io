@@ -13,37 +13,10 @@
   <div class="grid-container">
 
   <!--ШАПКА-->
-  <header class="header">
-    <div class="header-container">
-      <a href="../index.html" class="logo-link" title="На главную страницу">
-        <img src="../MainElementsImages/UmaMusumeAstonMachanLogo.png" alt="Logo" loading="eager">
-      </a>
-      
-      <h1>Персонажи игры Uma Musume: Pretty Derby</h1>
-      
-      <div class="nav-wrapper">
-        <button class="nav-toggle" aria-label="Открыть меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        
-        <nav class="header-nav">
-          <a href="../index.html" class="nav-link">Главная</a>
-          <a href="../UmaMusumeListOfCharacters.html" class="nav-link">Список персонажей</a>
-          <a href="../UmaMusumeGallery.html" class="nav-link">Галерея</a>
-          <a href="../NewsUmaMusume.html" class="nav-link">Новости</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <div data-include="components_CharacterPages/header.html"></div>
 
   <!-- КНОПКА ВВЕРХ -->
-<div class="fixed-container">
-  <a href="#Up">
-    <button class="fixed-button">⬆</button>
-  </a>
-</div>
+  <div data-include="components_CharacterPages/upbutton.html"></div>
   
 <main class="main-content">
 <!--МАТИКАНЭ ТАНГЕЙЗЕР-->
