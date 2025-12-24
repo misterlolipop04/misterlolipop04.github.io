@@ -12,33 +12,10 @@
   <div class="grid-container">
 
     <!--ШАПКА-->
-    <header class="header">
-        <div class="header-container">
-          <a href="./index.html" class="logo-link" title="На главную страницу">
-            <img src="./MainElementsImages/UmaMusumeAstonMachanLogo.png" alt="Logo" loading="eager">
-          </a>
-          
-          <h1>Персонажи игры Uma Musume: Pretty Derby</h1>
-          
-          <div class="nav-wrapper">
-            <button class="nav-toggle" aria-label="Открыть меню">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            
-            <nav class="header-nav">
-              <a href="./index.html" class="nav-link">Главная</a>
-              <a href="./UmaMusumeListOfCharacters.html" class="nav-link">Список персонажей</a>
-              <a href="./UmaMusumeGallery.html" class="nav-link">Галерея</a>
-              <a href="./NewsUmaMusume.html" class="nav-link">Новости</a>
-            </nav>
-          </div>
-        </div>
-      </header>
-
+    <div data-include="components_main/header.html"></div>
+    
     <!--КНОПКА ВВЕРХ-->
-    <a href="#Up"><button class="fixed-button">⬆</button></a>
+    <div data-include="components_main/upbutton.html"></div>
     
     <!--ОСНОВНОЙ КОНТЕНТ-->
     <main class="main-content">
@@ -312,18 +289,8 @@
     </main>
 
 <!--ПОДВАЛ-->
-<footer id="AboutUs" class="footer">
-    <div class="AboutUs">
-      <h3>О нас</h3>
-      Данный сайт не связан с разработчиками Uma Musume. Все материалы игры Uma Musume: Pretty Derby защищены авторским правом Cygames, Inc.
-    </div>
-    <div class="ContactUs">
-      <h3>Контактные данные</h3>
-      Автор: Зильберман Даниэль Яковлевич<br>
-      Телефон: +79167872309<br>
-      Почта: danielzimouse@gmail.com<br>
-    </div>
-  </footer>
+<div data-include="components_main/footer.html"></div>
+
   </div>
 
   <script src="./UmaMusumeSiteScript.js"></script>
