@@ -403,6 +403,37 @@ article {
     }
 }
 
+ /* Для планшетов и мобильных устройств */
+@media (max-width: 768px) {
+    .characters-gallery {
+        grid-template-columns: repeat(auto-fill, 120px);
+        gap: 16px;
+    }
+    
+    .character-card {
+        width: 120px;
+        height: 140px;
+    }
+    
+    .character-card img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .character-card figcaption {
+        font-size: 12px;
+    }
+}
+
+/* Для маленьких мобильных устройств */
+@media (max-width: 480px) {
+    .characters-gallery {
+        grid-template-columns: repeat(2, 120px);
+        gap: 16px;
+        padding: 0 8px;
+    }
+}
+
 /* ===== СТРАНИЦА НОВОСТЕЙ ===== */
 .news-page {
     max-width: 800px;
