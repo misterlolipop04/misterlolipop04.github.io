@@ -327,15 +327,17 @@ article {
 /* ===== СПИСОК ПЕРСОНАЖЕЙ ===== */
 .characters-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 10rem;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: center;
+    gap: 16px;
+    margin: 16px;
+    padding: 16px;
+    box-sizing: border-box;
 }
 
 .character-card {
-    width: 100%;
-    min-height: 140px;
+    width: 150px;
+    height: 170px;
     background-color: var(--secondary-color);
     padding: 10px;
     border: 3px solid var(--accent-color);
@@ -348,6 +350,17 @@ article {
     transition: background-color 0.3s ease, 
                 border-color 0.3s ease, 
                 box-shadow 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.character-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
 }
 
 .character-card.ready-for-hover:hover {
@@ -357,12 +370,10 @@ article {
 }
 
 .character-card img {
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+    flex-shrink: 0;
     transition: transform 0.3s ease;
 }
 
@@ -371,12 +382,25 @@ article {
 }
 
 .character-card figcaption {
-    margin-top: 8px;
     font-size: 14px;
     line-height: 1.2;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
     width: 100%;
+    margin-top: auto;
+    padding-top: 5px;
+    overflow: hidden;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .characters-gallery {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .characters-gallery {
+        grid-template-columns: repeat(2, 150px);
+    }
 }
 
 /* ===== СТРАНИЦА НОВОСТЕЙ ===== */
@@ -803,10 +827,6 @@ article {
         font-size: 0.85rem;
     }
     
-    .characters-gallery {
-        margin: 2rem 5rem;
-    }
-    
     .highlight-box-large li {
         font-size: 1rem;
     }
@@ -885,22 +905,6 @@ article {
     
     .nav-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
-    }
-    
-    .characters-gallery {
-        margin: 2rem 2rem;
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-        gap: 1rem;
-    }
-    
-    .character-card {
-        min-height: 120px;
-        padding: 8px;
-    }
-    
-    .character-card img {
-        max-width: 80px;
-        max-height: 80px;
     }
     
     .news-page {
@@ -1086,26 +1090,6 @@ article {
     .logo-link img {
         width: 45px;
         height: 45px;
-    }
-    
-    .characters-gallery {
-        margin: 2rem 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 0.8rem;
-    }
-    
-    .character-card {
-        min-height: 100px;
-        padding: 5px;
-    }
-    
-    .character-card img {
-        max-width: 70px;
-        max-height: 70px;
-    }
-    
-    .character-card figcaption {
-        font-size: 12px;
     }
     
     .news-post {
