@@ -217,6 +217,8 @@ ul ul {
 /* ===== ОБЩИЕ КОМПОНЕНТЫ ===== */
 .common-text {
     padding: 1rem 0;
+    margin: auto;
+    max-width: 650px;
 }
 
 .fig {
